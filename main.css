@@ -1,5 +1,13 @@
+body {
+	margin: 0;
+	background-color:powderblue;
+	font-family:courier;
+	text-align:center;
+	border: 5px solid #999;
+}
+
 .city {
-  background-color: grey;
+  background-color: tomato;
   color: white;
   border: 2px solid black;
   margin: 20px;
