@@ -4,6 +4,17 @@
 	<link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+<script>
+function loadXMLDoc() {
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://cs.deals/API/IPricing/GetSalesHistory/v1?appid=252490&name=Big%20Grin",true);
+  xhr.send();
+  xhr.onload = () => document.getElementById("demo").innerHTML = this.responseText;
+}
+</script>	
 <div>
   <h2>Rust Skin Prices</h2>
   <p>I would be willing to instantly cashout at these prices</p>
