@@ -15,10 +15,12 @@ async function loadDoc() {
   xhttp.send();
 }
 (async () => {
+  try{
   const x = await loadDoc()
   console.log(x)
 } catch (e) {
   console.log("fail")
+}
 })();
 </script>
 
