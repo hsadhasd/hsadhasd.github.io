@@ -14,8 +14,12 @@ async function loadDoc() {
   xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send();
 }
-const x = await loadDoc()
-console.log(x);
+(async () => {
+  const x = await loadDoc()
+  console.log(x)
+} catch (e) {
+  console.log("fail")
+})();
 </script>
 
 </body>
