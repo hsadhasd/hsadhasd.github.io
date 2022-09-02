@@ -4,12 +4,13 @@
 	<link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 <h1>Rust Skin Prices</h1>
-<p>I would be willing to insstantly cashout at these prices</p>
+<p>I would be willing to instantly cashout at these prices</p>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
       return this.responseText;
     }
   };
