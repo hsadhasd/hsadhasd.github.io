@@ -7,7 +7,7 @@ function fetchAsync (url) {
   let response = fetch(url);   
   const data = response.text;
   console.log(data)
-  document.getElementById("demo").innerHTML = data;
+  document.getElementById("demo").innerHTML = JSON.stringify(data);
 }
 const x = fetchAsync("https://hsadhasd.github.io/ajax_info.txt")
 
