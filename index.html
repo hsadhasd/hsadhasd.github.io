@@ -7,7 +7,6 @@ async function fetchAsync (url) {
   let response = await fetch(url);   
   let data = await response.json();  
   document.getElementById("demo").innerHTML = data;
-  return data; 
 }
 (async () => {
   try{
