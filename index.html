@@ -5,7 +5,7 @@
 <script>
 async function fetchAsync (url) {  
   let response = await fetch(url);   
-  let data = await response.json();  
+  const data = response.json();  
   document.getElementById("demo").innerHTML = data;
 }
 (async () => {
