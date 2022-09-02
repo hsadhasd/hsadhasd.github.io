@@ -14,7 +14,8 @@ async function loadDoc() {
   xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send();
 }
-console.log(await loadDoc());
+const x = await loadDoc()
+console.log(x);
 </script>
 
 </body>
