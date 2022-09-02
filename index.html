@@ -7,7 +7,7 @@
 <p id="demo"></p>
 
 <script>
-function request(file){fetch (file).then(x => x.text());}
+function request(file){fetch (file).then(x => x.text());return x;}
 document.getElementById("demo").innerHTML = JSON.parse(request("ajax_info.txt"))
 
 </script>
