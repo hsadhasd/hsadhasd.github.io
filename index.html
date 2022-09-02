@@ -4,10 +4,11 @@
 
 <h1>JavaScript Fetch API</h1>
 <h2>The fetch() Method</h2>
-<p id="demo">Fetch a file to change this text.</p>
+<p id="demo"></p>
 
 <script>
-fetch ("ajax_info.txt").then(x => x.text()).then(y => document.getElementById("demo").innerHTML = y);
+function request(file){fetch (file).then(x => x.text()).then(y => document.getElementById("demo").innerHTML = y);}
+request("ajax_info.txt")
 </script>
 
 </body>
