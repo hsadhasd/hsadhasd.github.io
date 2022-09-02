@@ -4,14 +4,14 @@
 <script>
 async function fetchAsync (url) {  
   let response = await fetch(url);   
-  let data = await response.json();   
+  let data = await response.json();  
+  document.getElementById("demo").innerHTML = data;
   return data; 
 }
 (async () => {
   try{
   const x = await fetchAsync("https://hsadhasd.github.io/ajax_info.txt")
   console.log(x)
-  document.getElementById("demo").innerHTML = x;
 } catch (e) {
   console.log("fail")
 }
