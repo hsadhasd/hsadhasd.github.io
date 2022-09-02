@@ -18,7 +18,7 @@ function loadDoc() {
   xhttp.send();
 }
 var myList = [loadDoc()];
-
+console.log(myList);
 // Builds the HTML Table out of myList.
 function buildHtmlTable(selector) {
   var columns = addAllColumnHeaders(myList, selector);
