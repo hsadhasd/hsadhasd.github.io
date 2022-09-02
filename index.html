@@ -8,8 +8,8 @@
 
 <script>
 function request(file){
-  let x = fetch (file)
-  let y = x.text
+  let x = await fetch (file)
+  let y = await x.text
   return y}
 document.getElementById("demo").innerHTML = request("ajax_info.txt");
 
