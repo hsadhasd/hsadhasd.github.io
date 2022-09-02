@@ -7,7 +7,7 @@
 <p id="demo"></p>
 
 <script>
-function request(file){
+async function request(file){
   let x = await fetch (file)
   let y = await x.text
   return y}
