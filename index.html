@@ -11,11 +11,15 @@ async function fetchAsync (url) {
   try{
   const x = await fetchAsync("https://hsadhasd.github.io/ajax_info.txt")
   console.log(x)
+  document.getElementById("demo").innerHTML = x;
 } catch (e) {
   console.log("fail")
 }
 })();
 </script>
-
+<p id="demo">A Paragraph</p>
+  
+  
+  
 </body>
 </html>
