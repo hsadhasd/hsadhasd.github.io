@@ -2,7 +2,25 @@
 <html>
 <head>
 	<link href="main.css" rel="stylesheet" type="text/css" />
-</head>	
+</head>
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
 <div>
   <h2>Rust Skin Prices</h2>
   <p>I would be willing to instantly cashout at these prices</p>
