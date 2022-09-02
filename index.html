@@ -3,16 +3,10 @@
 <body>
 <p id="demo">A Paragraph</p>
 <script>
-function fetchAsync (url) {  
-  let response = fetch(url);   
-  const data = response.text;
-  console.log(data)
-  document.getElementById("demo").innerHTML = JSON.stringify(data);
-}
-const x = fetchAsync("https://hsadhasd.github.io/ajax_info.txt")
-
-
-
+let response = fetch("https://hsadhasd.github.io/ajax_info.txt");   
+const data = response.text;
+console.log(data)
+document.getElementById("demo").innerHTML = JSON.stringify(data);
 </script>
   
   
