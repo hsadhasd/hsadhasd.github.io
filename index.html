@@ -8,9 +8,7 @@
 
 <script>
 async function request(file){
-  let x = await fetch (file);
-  let y = await x.text();
-  document.getElementById("demo").innerHTML = y;}
+  document.getElementById("demo").innerHTML = await fetch (file).text();}
 request("ajax_info.txt");
 </script>
 
