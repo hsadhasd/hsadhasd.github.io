@@ -11,7 +11,7 @@ function request(file){
   let x = fetch (file)
   let y = x.text
   return y}
-document.getElementById("demo").innerHTML = JSON.parse(request("ajax_info.txt"))
+document.getElementById("demo").innerHTML = request("ajax_info.txt");
 
 </script>
 
