@@ -10,6 +10,6 @@ async function request(file,id){
   for (g in myArr) {
   txt += myArr[g] + "<br>"; 
   }
- document.getElementById(id).innerHTML =myArr[0].name;
+ document.getElementById(id).innerHTML =txt;
 }
 request("api/RustSkinPrices.txt","demo")  
