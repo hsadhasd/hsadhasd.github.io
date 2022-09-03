@@ -8,7 +8,7 @@ async function request(file,id){
   console.log(myArr[0].name);
   let txt = ""
   for (g in myArr) {
-  txt += myArr[g] + "<br>"; 
+  txt += myArr[g].name + "<br>"; 
   }
  document.getElementById(id).innerHTML =txt;
 }
