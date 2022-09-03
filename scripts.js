@@ -6,6 +6,7 @@ async function request(file,id){
   var arrayLength = z.length;
   for (var i = 0; i < arrayLength; i++) {
     console.log(z[i]);
+  }
  document.getElementById(id).innerHTML = z
 }
 request("api/RustSkinPrices.txt","demo")  
