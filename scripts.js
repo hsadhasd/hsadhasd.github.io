@@ -8,8 +8,8 @@ async function request(file,id){
   console.log(myArr[0].name);
   let txt = ""
   for (g in myArr) {
-  txt += myArr[g].name + "<br>"; 
+  	txt = txt + "<tr>" + "<th>" + myArr[g].name + "</th>"+ "<th>" + myArr[g].price + "</th>" + "</tr>"; 
   }
- document.getElementById(id).innerHTML =txt;
+ document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
 request("api/RustSkinPrices.txt","demo")  
