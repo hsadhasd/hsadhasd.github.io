@@ -6,6 +6,10 @@ async function request(file,id){
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
   console.log(myArr[0].name);
+  let txt = ""
+  for (g in myArr) {
+  txt += myArr[g] + "<br>"; 
+  }
  document.getElementById(id).innerHTML =myArr[0].name;
 }
 request("api/RustSkinPrices.txt","demo")  
