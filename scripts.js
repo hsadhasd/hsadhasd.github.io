@@ -9,7 +9,7 @@ async function request_1(file,id){
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Market Name" + "</th>"+ "<th>" + "Market Price" + "</th>" + "</tr>"; 
   for (g in myArr) {
-  	txt = txt + "<tr>" + "<th>" + myArr[g].name + "</th>"+ "<th>" + myArr[g].price + "</th>" + "</tr>"; 
+  	txt = txt + "<tr>" + "<td>" + myArr[g].name + "</td>"+ "<td>" + myArr[g].price + "</td>" + "</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
