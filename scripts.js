@@ -5,6 +5,6 @@ async function request(file,id){
   console.log(y)
   const myArr = JSON.parse(y);
   console.log(myArr[0])
- document.getElementById(id).innerHTML = myArr[0]
+ document.getElementById(id).innerHTML = myArr.name
 }
 request("api/RustSkinPrices.txt","demo")  
