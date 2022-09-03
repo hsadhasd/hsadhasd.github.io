@@ -1,4 +1,7 @@
 async function request(file,id){
-  fetch (file).then(x => x.text()).then(y => document.getElementById(id).innerHTML = y);;
+  let x;
+  x = fetch (file)then(y => document.getElementById(id).innerHTML = y);;
+  x = x.text()
+  document.getElementById(id).innerHTML = x
 }
 request("api/RustSkinPrices.txt","demo")  
