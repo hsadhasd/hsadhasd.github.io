@@ -1,5 +1,5 @@
 console.log("WHY ARE YOU LOOKING HERE?")
-async function request(file,id){
+async function request_1(file,id){
   let x = await fetch (file);
   let y = await x.text();
   console.log(y);
@@ -13,4 +13,4 @@ async function request(file,id){
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
-request("api/RustSkinPrices.txt","demo")  
+request_1("api/RustSkinPrices.txt","demo")  
