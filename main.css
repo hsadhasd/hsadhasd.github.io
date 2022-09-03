@@ -19,6 +19,11 @@ tr:nth-child(even) {
   margin-left: auto;
   margin-right: auto;
 }
+tr:nth-child(odd) {
+  background-color: #999;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer {
     display: flex;
     justify-content: center;
