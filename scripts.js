@@ -1,3 +1,4 @@
+console.log("WHY ARE YOU LOOKING HERE?")
 async function request(file,id){
   let x;
   x = fetch (file);
