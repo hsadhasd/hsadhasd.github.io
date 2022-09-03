@@ -5,12 +5,7 @@
 <h1>Rust Skins</h1>
 <button type="button" onclick=request("ajax_info.txt","demo")>Refresh</button>
 <p id="demo"></p>
-
-<script>
-async function request(file,id){
-  fetch (file).then(x => x.text()).then(y => document.getElementById(id).innerHTML = y);;
-}
-</script>
+<script src='scripts.js'></script><script>
 
 </body>
 </html>
