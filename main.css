@@ -16,13 +16,12 @@ table, td, th {
 }
 tr:nth-child(even) {
   background-color: #dddddd;
-  margin-left: auto;
-  margin-right: auto;
 }
 tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(1) {
   background-color: #999;
-  margin-left: auto;
-  margin-right: auto;
 }
 footer {
     display: flex;
