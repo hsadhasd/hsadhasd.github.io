@@ -4,6 +4,7 @@ async function request(file,id){
   let y = await x.text();
   console.log(y)
   const myArr = JSON.parse(y);
+  console.log(myArr)
  document.getElementById(id).innerHTML = z
 }
 request("api/RustSkinPrices.txt","demo")  
