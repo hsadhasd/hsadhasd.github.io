@@ -1,8 +1,7 @@
 console.log("WHY ARE YOU LOOKING HERE?")
 async function request(file,id){
-  let x;
-  x = fetch (file);
-  x = x.text();
-  document.getElementById(id).innerHTML = x;
+  let x = await fetch (file);
+  let y = await x.text();
+  document.getElementById(id).innerHTML = y;
 }
 request("api/RustSkinPrices.txt","demo")  
