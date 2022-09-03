@@ -7,6 +7,7 @@ async function request(file,id){
   const myArr = JSON.parse(z);
   console.log(myArr[0].name);
   let txt = ""
+  txt = txt + "<tr>" + "<th>" + "Market Name" + "</th>"+ "<th>" + "Market Price" + "</th>" + "</tr>"; 
   for (g in myArr) {
   	txt = txt + "<tr>" + "<th>" + myArr[g].name + "</th>"+ "<th>" + myArr[g].price + "</th>" + "</tr>"; 
   }
