@@ -3,9 +3,9 @@ async function request(file,id){
   let x = await fetch (file);
   let y = await x.text();
   y.replace(/&quot;/ig,'"');
-  console.log(y[0])
+  console.log(y)
   const myArr = JSON.parse(y);
   console.log(myArr)
- document.getElementById(id).innerHTML = z
+ document.getElementById(id).innerHTML = myArr
 }
 request("api/RustSkinPrices.txt","demo")  
