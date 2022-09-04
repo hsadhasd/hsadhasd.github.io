@@ -33,6 +33,7 @@ body {
 }
 
 table, td, th {
+  color: black;
   border: 1px solid #999;
   text-align: left;
   padding: 8px;
@@ -40,12 +41,15 @@ table, td, th {
   margin-right: auto;
 }
 tr:nth-child(even) {
+  color: black;
   background-color: #dddddd;
 }
 tr:nth-child(odd) {
+  color: black;
   background-color: #f2f2f2;
 }
 tr:nth-child(1) {
+  color: black;
   background-color: #999;
 }
 footer {
