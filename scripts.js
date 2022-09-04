@@ -7,7 +7,7 @@ async function request_1(file,id){
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Market Name" + "</th>"+ "<th>" + "Market Price" + "</th>" + "</tr>"; 
   for (g in myArr) {
-  	txt = txt + "<tr>" + "<td href="https://steamcommunity.com/market/listings/252490/${myArr[g].name}">" + myArr[g].name + "</td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
+  	txt = txt + "<tr>" + "<td href="https://steamcommunity.com/market/listings/252490/${myArr[g].name}" target="_blank">" + myArr[g].name + "</td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
