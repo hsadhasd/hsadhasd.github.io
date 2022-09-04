@@ -23,6 +23,7 @@ a:active {
 }
 
 body {
+	color:white;
 	margin: 0;
 	background-color:#404040;
 	font-family:courier;
