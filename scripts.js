@@ -8,6 +8,7 @@ async function request_1(file,id){
   txt = txt + "<tr>" + "<th>" + "Market Name" + "</th>"+ "<th>" + "Market Price" + "</th>" + "</tr>"; 
   for (g in myArr) {
     let name = myArr[g].name
+    name = name.replace(" ","%20")
     let link = "https://steamcommunity.com/market/listings/252490/"+name;
     console.log(link)
   	txt = txt + "<tr>" + "<td><a>" + myArr[g].name + "</a></td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
