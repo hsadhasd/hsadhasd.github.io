@@ -10,7 +10,6 @@ async function request_1(file,id){
     let name = myArr[g].name
     name = name.replace(/ /g,"%20")
     let link = "https://steamcommunity.com/market/listings/252490/"+name;
-    console.log(link)
   	txt = txt + "<tr>" + "<td><a target=_blank href="+link+">" + myArr[g].name + "</a></td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
