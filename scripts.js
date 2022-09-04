@@ -1,6 +1,7 @@
 console.log("Welcome to the console?")
 async function request_1(file,id){
-  let x = await fetch (file);
+  let time = performance.now()
+  let x = await fetch (file + "?" + time);
   let y = await x.text();
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
