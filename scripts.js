@@ -11,7 +11,7 @@ async function request_1(file,id){
     name = name.replace(/ /g,"%20")
     let link = "https://steamcommunity.com/market/listings/252490/"+name;
     console.log(link)
-  	txt = txt + "<tr>" + "<td><a>" + myArr[g].name + "</a></td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
+  	txt = txt + "<tr>" + '<td><a href=${link}>' + myArr[g].name + "</a></td>"+ "<td>$" + myArr[g].price + "</td>" + "</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
