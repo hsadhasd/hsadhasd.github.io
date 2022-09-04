@@ -1,11 +1,9 @@
-console.log("WHY ARE YOU LOOKING HERE?")
+console.log("Welcome to the console?")
 async function request_1(file,id){
   let x = await fetch (file);
   let y = await x.text();
-  console.log(y);
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
-  console.log(myArr[0].name);
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Market Name" + "</th>"+ "<th>" + "Market Price" + "</th>" + "</tr>"; 
   for (g in myArr) {
