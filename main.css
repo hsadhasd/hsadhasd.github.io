@@ -24,7 +24,7 @@ a:active {
 .btn-group {
   background-color: #A9A9A9;
   color: #FFFFFF;
-  float: right;
+  float: middle;
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
