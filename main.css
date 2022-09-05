@@ -21,7 +21,6 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-
 body {
 	color:white;
 	margin: 0;
@@ -31,9 +30,33 @@ body {
 	border: 5px solid #999;
 	font-size: 115%;
 }
+p {
+	a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-table, td, th {
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
   color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+}
+table, td, th {
+  color: white;
   border: 1px solid #999;
   text-align: left;
   padding: 8px;
