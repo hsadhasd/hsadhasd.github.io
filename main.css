@@ -17,9 +17,18 @@ a:hover {
 }
 
 a:active {
-  color: #A9A9A9;
+  color: #d;
   background-color: transparent;
   text-decoration: underline;
+}
+.btn-group {
+  background-color: #A9A9A9;
+  color: #FFFFFF;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 body {
   color:#A9A9A9;
@@ -33,7 +42,7 @@ body {
 
 table, td, th {
   color: #A9A9A9;
-  border: 1px solid #999;
+  border: 1px solid #2c2c2c;
   text-align: left;
   padding: 8px;
   margin-left: auto;
