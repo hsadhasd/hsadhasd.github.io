@@ -23,12 +23,10 @@ a:active {
 }
 .btn-group {
   background-color: #A9A9A9;
-  color: #FFFFFF;
+  color: #A9A9A9;
   float: middle;
   padding: 10px;
   border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
   width: 70px;
   height: 30px;
 }
