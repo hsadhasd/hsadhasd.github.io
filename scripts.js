@@ -26,19 +26,19 @@ async function request_2(file,id){
   console.log(z)
   const myArr = JSON.parse(z);
   txt = ""
-  if myArr.csdeals = "true" {
+  if myArr.csdeals === "true" {
     txt = txt + "<a style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals/</a>"
   }
   else {
     txt = txt + "<a style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals/</a>"
   }
-  if myArr.dmarket = "true" {
+  if myArr.dmarket === "true" {
     txt = txt + "<a style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com/</a>"
   }
   else {
      txt = txt + "<a style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com/</a>"
   }
-  if myArr.skinport = "true" {
+  if myArr.skinport === "true" {
     txt = txt + "<a style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>"
   }
   else {
