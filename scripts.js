@@ -1,5 +1,6 @@
 console.log("Welcome to the console?")
 async function request_1(file,id){
+  document.getElementById(id).innerHTML = "Loading Prices...";
   let time = performance.now()
   let x = await fetch (file + "?" + time);
   let y = await x.text();
