@@ -25,7 +25,7 @@ async function request_2(file,id){
   let z = y.replace(/'/g, '"');
   console.log(z)
   const myArr = JSON.parse(z);
-  document.getElementById(id).innerHTML = myArr.csdeals;
+  document.getElementById(id).innerHTML = "<p><a target=_blank href=https://cs.deals/market/rust/>cs.deals</a>/<a target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>/<a target=_blank href=https://skinport.com/rust>skinport.com</a></p>";
 }
 request_2("api/status.txt","status")
 request_1("api/prices.txt","priceTable")
