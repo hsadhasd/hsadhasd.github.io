@@ -1,1 +1,1 @@
-{'csdeals': true, 'dmarket': true, 'skinport': true}
+{'csdeals': "True", 'dmarket': "True", 'skinport': "True"}
