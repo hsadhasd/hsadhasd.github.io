@@ -39,6 +39,16 @@ table, td, th {
   margin-left: auto;
   margin-right: auto;
 }
+.btn-group {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 tr:nth-child(even) {
   color: #A9A9A9;
   background-color: #282828;
