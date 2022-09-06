@@ -27,22 +27,22 @@ async function request_2(file,id){
   const myArr = JSON.parse(z);
   txt = ""
   if (myArr.csdeals === "True") {
-    txt = txt + "<a style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>/"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>/"
   }
   else {
-    txt = txt + "<a style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>/"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>/"
   }
   if (myArr.dmarket === "True") {
-    txt = txt + "<a style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>/"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>/"
   }
   else {
-     txt = txt + "<a style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>/"
+     txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>/"
   }
   if (myArr.skinport === "True") {
-    txt = txt + "<a style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>"
   }
   else {
-    txt = txt + "<a style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>"
   }
   document.getElementById(id).innerHTML = "<p>"+txt+"</p>";
 }
