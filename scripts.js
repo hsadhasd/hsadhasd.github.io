@@ -18,11 +18,12 @@ async function request_1(file,id){
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
 async function request_2(file,id){
-  document.getElementById(id).innerHTML = "Loading Prices...";
+  document.getElementById(id).innerHTML = "Loading Status...";
   let time = performance.now()
   let x = await fetch (file + "?" + time);
   let y = await x.text();
   let z = y.replace(/'/g, '"');
+  console.log(z)
   const myArr = JSON.parse(z);
   document.getElementById(id).innerHTML = myArr.csdeals;
 }
