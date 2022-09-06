@@ -24,7 +24,7 @@ async function request_2(file,id){
   let y = await x.text();
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
-  document.getElementById(id).innerHTML = myArr;
+  document.getElementById(id).innerHTML = myArr.csdeals;
 }
-request_2("api/prices.txt","status")
+request_2("api/status.txt","status")
 request_1("api/prices.txt","priceTable")
