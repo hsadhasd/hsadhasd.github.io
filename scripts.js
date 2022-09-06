@@ -14,7 +14,7 @@ async function request_1(file,id){
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
   	txt = txt + "<tr>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr[g].sitePrice + "</td>" + "<td>$" + myArr[g].discordPrice + "</td>" + "</tr>"; 
   }
- document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
+ document.getElementById(id).innerHTML = "<table id="table">" + txt + "</table>";
 }
 var $rows = $('#table tr');
 $('#search').keyup(function() {
