@@ -17,4 +17,4 @@ async function request_1(file,id){
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
-request_1("api/Prices.txt","demo")
+request_1("api/prices.txt","demo")
