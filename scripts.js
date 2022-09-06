@@ -17,4 +17,14 @@ async function request_1(file,id){
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
-request_1("api/prices.txt","demo")
+async function request_2(file,id){
+  document.getElementById(id).innerHTML = "Loading Prices...";
+  let time = performance.now()
+  let x = await fetch (file + "?" + time);
+  let y = await x.text();
+  let z = y.replace(/'/g, '"');
+  const myArr = JSON.parse(z);
+  document.getElementById(id).innerHTML = myArr;
+}
+request_2("api/prices.txt","status")
+request_1("api/prices.txt","priceTable")
