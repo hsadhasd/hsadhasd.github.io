@@ -26,23 +26,23 @@ async function request_2(file,id){
   console.log(z)
   const myArr = JSON.parse(z);
   txt = ""
-  if (myArr.csdeals === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>($1000)/"
+  if (myArr.csdeals.status === "True") {
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+myArr.csdeals.balance+")/"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>($1000)/"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+myArr.csdeals.balance+")/"
   }
-  if (myArr.dmarket === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>($1000)/"
-  }
-  else {
-     txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>($1000)/"
-  }
-  if (myArr.skinport === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>($1000)"
+  if (myArr.dmarket.status === "True") {
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>("+myArr.dmarket.balance+")/"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>($1000)"
+     txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>("+myArr.dmarket.balance+")/"
+  }
+  if (myArr.skinport.status === "True") {
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")/"
+  }
+  else {
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")/"
   }
   document.getElementById(id).innerHTML = "<p>"+txt+"</p>";
 }
