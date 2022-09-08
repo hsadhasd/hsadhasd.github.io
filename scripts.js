@@ -33,16 +33,16 @@ async function request_2(file,id){
     txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>"+myArr.csdeals.balance+"</a>"+")/"
   }
   if (myArr.dmarket.status === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>cs.deals</a>("+"<a title=Balance on dmarket.com>"+myArr.csdeals.balance+"</a>"+")/"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>("+"<a title=Balance on dmarket.com>"+myArr.csdeals.balance+"</a>"+")/"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>cs.deals</a>("+"<a title=Balance on dmarket.com>"+myArr.csdeals.balance+"</a>"+")/"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.coms</a>("+"<a title=Balance on dmarket.com>"+myArr.csdeals.balance+"</a>"+")/"
   }
   if (myArr.skinport.status === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>cs.deals</a>("+"<a title=Balance on skinport.com>"+myArr.csdeals.balance+"</a>"+")"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>("+"<a title=Balance on skinport.com>"+myArr.csdeals.balance+"</a>"+")"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>cs.deals</a>("+"<a title=Balance on skinport.com>"+myArr.csdeals.balance+"</a>"+")"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>("+"<a title=Balance on skinport.com>"+myArr.csdeals.balance+"</a>"+")"
   }
   document.getElementById(id).innerHTML = "<p>"+txt+"</p>";
 }
