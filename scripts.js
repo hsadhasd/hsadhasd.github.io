@@ -39,10 +39,10 @@ async function request_2(file,id){
      txt = txt + "<a title=Offline style=color:red target=_blank href=https://dmarket.com/ingame-items/item-list/rust-skins>dmarket.com</a>("+myArr.dmarket.balance+")/"
   }
   if (myArr.skinport.status === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")/"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")/"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://skinport.com/rust>skinport.com</a>("+myArr.skinport.balance+")"
   }
   document.getElementById(id).innerHTML = "<p>"+txt+"</p>";
 }
