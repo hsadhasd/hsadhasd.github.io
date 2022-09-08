@@ -1,1 +1,1 @@
-{'csdeals': "True", 'dmarket': "False", 'skinport': "True"}
+{'csdeals':{'status':'True','balance':'True'}, 'dmarket':{'status':'True','balance':'True'}, 'skinport':{'status':'True','balance':'True'}}
