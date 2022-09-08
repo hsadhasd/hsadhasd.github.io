@@ -1,1 +1,1 @@
-{'csdeals':{'status':'True','balance':'True'}, 'dmarket':{'status':'True','balance':'True'}, 'skinport':{'status':'True','balance':'True'}}
+{'csdeals':{'status':'True','balance':'$1527'}, 'dmarket':{'status':'True','balance':'$726'}, 'skinport':{'status':'True','balance':'$921'}}
