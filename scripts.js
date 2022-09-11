@@ -45,8 +45,6 @@ async function request_2(file,id){
   }
   document.getElementById(id).innerHTML = "<p>"+txt+"</p>";
 }
-request_2("api/status.txt","status")
-request_1("api/prices.txt","priceTable")
 
 async function request_refresh(id){
   console.log(id)
@@ -55,3 +53,4 @@ async function request_refresh(id){
   request_1("api/prices.txt","priceTable")
   document.getElementById(id).innerHTML = "Refresh";
 }
+request_refresh("button")
