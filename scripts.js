@@ -53,5 +53,5 @@ async function request_refresh(id){
   document.getElementById(id).innerHTML = "Wait";
   request_2("api/status.txt","status")
   request_1("api/prices.txt","priceTable")
-  document.getElementById(id).innerHTML = "<button id=button type=button onclick=request_refresh(button)> Refresh</button>";
+  document.getElementById(id).innerHTML = "Refresh";
 }
