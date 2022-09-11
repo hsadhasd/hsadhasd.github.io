@@ -48,7 +48,7 @@ async function request_2(file,id){
 
 async function request_refresh(id){
   console.log(id)
-  document.getElementById(id).innerHTML = "Wait";
+  document.getElementById(id).innerHTML = "Loading...";
   await request_2("api/status.txt","status")
   await request_1("api/prices.txt","priceTable")
   document.getElementById(id).innerHTML = "Refresh";
