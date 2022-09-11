@@ -1,4 +1,4 @@
-console.log("Welcome to the console?")
+console.log("Loaded Javascript")
 async function request_1(file,id){
   document.getElementById(id).innerHTML = "Loading Prices...";
   let time = performance.now()
@@ -23,7 +23,6 @@ async function request_2(file,id){
   let x = await fetch (file + "?" + time);
   let y = await x.text();
   let z = y.replace(/'/g, '"');
-  console.log(z)
   const myArr = JSON.parse(z);
   txt = ""
   if (myArr.csdeals.status === "True") {
