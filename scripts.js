@@ -7,7 +7,7 @@ async function request_1(file,id){
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
   let txt = ""
-  txt = txt + "<tr>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "Sell" + "</th>" + "</tr>"; 
+  txt = txt + "<tr>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "</tr>"; 
   for (g in myArr) {
     let name = myArr[g].name;
     nameE = name.replace(/ /g,"%20");
