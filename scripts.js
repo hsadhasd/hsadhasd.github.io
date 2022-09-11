@@ -13,7 +13,7 @@ async function request_1(file,id){
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
-  	txt = txt + "<tr>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr[g].buy + "</td>"+ "<td>$" + myArr[g].sell + "</td>"+ "<td>" + myArr[g].stock + "</td>""</tr>"; 
+  	txt = txt + "<tr>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr[g].buy + "</td>"+ "<td>$" + myArr[g].sell + "</td>"+ "<td>" + myArr[g].stock + "</td>"+"</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
@@ -52,5 +52,5 @@ async function request_refresh(id){
   document.getElementById(id).innerHTML = "<button type=button>Wait</button>";
   request_2("api/status.txt","status")
   request_1("api/prices.txt","priceTable")
-  document.getElementById(id).innerHTML = "<button type=button onclick=request_refresh(button)>Refresh</button>";
+  document.getElementById(id).innerHTML = "<button id=button type=button onclick=request_refresh(button)> Refresh</button>";
 }
