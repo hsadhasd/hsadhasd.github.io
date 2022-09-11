@@ -47,3 +47,8 @@ async function request_2(file,id){
 }
 request_2("api/status.txt","status")
 request_1("api/prices.txt","priceTable")
+
+async function request_refresh(){
+  request_2("api/status.txt","status")
+  request_1("api/prices.txt","priceTable")
+}
