@@ -56,7 +56,7 @@ async function request_refresh(id){
 
 fetch('api/prices.json', {
   method: "GET",
-  headers: {"Content-type": "application/json;charset=UTF-8"}
+  headers: {"Content-type": 'application/json'}
 })
 .then(response => response.json()) 
 .then(json => console.log(json)); 
