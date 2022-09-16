@@ -2,10 +2,9 @@ console.log("Loaded Javascript")
 async function request_1(file,id){
   document.getElementById(id).innerHTML = "Loading Prices...";
   let time = performance.now()
-  let x = await fetch (file + "?" + time);
+  let x = await fetch('api/prices.json?'+time, {method: "GET",headers: {"Content-type": 'application/json'}})
   let y = await x.text();
-  let z = y.replace(/'/g, '"');
-  const myArr = sendRequest
+  const myArr = JSON.parse(y);
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "<th>" + "Stock" + "</th>" + "</tr>"; 
   for (g in myArr) {
@@ -20,7 +19,7 @@ async function request_1(file,id){
 async function request_2(file,id){
   document.getElementById(id).innerHTML = "Loading Status...";
   let time = performance.now()
-  let x = await fetch (file + "?" + time);
+  let x = await fetch('api/status.json?'+time, {method: "GET",headers: {"Content-type": 'application/json'}})
   let y = await x.text();
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
@@ -54,9 +53,7 @@ async function request_refresh(id){
   document.getElementById(id).innerHTML = "Refresh";
 }
 
-fetch('api/prices.json', {
-  method: "GET",
-  headers: {"Content-type": 'application/json'}
+fetch('api/prices.json', {method: "GET",headers: {"Content-type": 'application/json'}
 })
 .then(response => response.json()) 
 .then(json => console.log(json)); 
