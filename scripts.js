@@ -21,7 +21,6 @@ async function request_2(file,id){
   let time = performance.now()
   let x = await fetch('api/status.json?'+time, {method: "GET",headers: {"Content-type": 'application/json'}})
   let y = await x.text();
-  let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
   txt = ""
   if (myArr.csdeals.status === "True") {
