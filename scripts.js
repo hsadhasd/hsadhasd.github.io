@@ -53,7 +53,7 @@ async function request_refresh(id){
   await request_1("api/prices.json","priceTable")
   document.getElementById(id).innerHTML = "Refresh";
 }
-request_refresh("button")
+
 fetch('api/prices.json', {
   method: "GET",
   headers: {"Content-type": "application/json;charset=UTF-8"}
