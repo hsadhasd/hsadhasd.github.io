@@ -5,7 +5,7 @@ async function request_1(file,id){
   let x = await fetch (file + "?" + time);
   let y = await x.text();
   let z = y.replace(/'/g, '"');
-  const myArr = JSON.parse(z);
+  const myArr = sendRequest
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "<th>" + "Stock" + "</th>" + "</tr>"; 
   for (g in myArr) {
@@ -49,8 +49,8 @@ async function request_2(file,id){
 async function request_refresh(id){
   console.log(id)
   document.getElementById(id).innerHTML = "Loading...";
-  await request_2("api/status.txt","status")
-  await request_1("api/prices.txt","priceTable")
+  await request_2("api/status.json","status")
+  await request_1("api/prices.json","priceTable")
   document.getElementById(id).innerHTML = "Refresh";
 }
 request_refresh("button")
