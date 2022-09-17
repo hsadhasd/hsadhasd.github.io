@@ -13,7 +13,7 @@ async function request_1(file,id){
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
-  	txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td border=3 height=100 width=100>" + "https://community.cloudflare.steamstatic.com/economy/image/6TMcQ7eX6E0EZl2byXi7vaVKyDk_zQLX05x6eLCFM9neAckxGDf7qU2e2gu64OnAeQ7835Fe5GLEfDY0jhyo8DEiv5daPq0_qrw_QfG9DKWskiE/360fx360f" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
+  	txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td>" + "<img src=images/big_grin.png alt= border=3 height=50 width=50></img>" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
