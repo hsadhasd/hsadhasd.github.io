@@ -7,13 +7,13 @@ async function request_1(file,id){
   let z = y.replace(/'/g, '"');
   const myArr = JSON.parse(z);
   let txt = ""
-  txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "<th>" + "Stock" + "</th>" + "</tr>"; 
+  txt = txt + "<tr>" + "<th>" + "Num" + "</th>"+ "<th>" + "image" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "<th>" + "Stock" + "</th>" + "</tr>"; 
   for (g in myArr.items) {
     let name = myArr.items[g].name;
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
-  	txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
+  	txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td border=3 height=100 width=100>" + "https://community.cloudflare.steamstatic.com/economy/image/6TMcQ7eX6E0EZl2byXi7vaVKyDk_zQLX05x6eLCFM9neAckxGDf7qU2e2gu64OnAeQ7835Fe5GLEfDY0jhyo8DEiv5daPq0_qrw_QfG9DKWskiE/360fx360f" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
