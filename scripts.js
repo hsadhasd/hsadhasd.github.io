@@ -54,7 +54,3 @@ async function request_refresh(id){
   document.getElementById(id).innerHTML = "Refresh";
 }
 request_refresh("button")
-fetch('https://9l3ynchcbb.execute-api.eu-west-2.amazonaws.com/Main/skinprices', {method: "GET",headers: {"Content-type": 'application/json'}
-})
-.then(response => response.json()) 
-.then(json => console.log(json)); 
