@@ -16,6 +16,12 @@ async function request_1(file,id){
     if (myArr.items[g].change_buy === 1) {
   	  txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td>" + "<a target=_blank href="+link+">"+"<img src=https://community.cloudflare.steamstatic.com/economy/image/6TMcQ7eX6E0EZl2byXi7vaVKyDk_zQLX05x6eLCFM9neAckxGDf7qU2e2gu64OnAeQ7835Fe5GLEfDY0jhyo8DEiv5daPq0_qrw_QfG9DKWskiE/360fx360f height=35 width=35></img></a>" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td><a style=color:blue>" + myArr.items[g].change_buy + "</a></td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
     }
+    if (myArr.items[g].change_buy > 1) {
+  	  txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td>" + "<a target=_blank href="+link+">"+"<img src=https://community.cloudflare.steamstatic.com/economy/image/6TMcQ7eX6E0EZl2byXi7vaVKyDk_zQLX05x6eLCFM9neAckxGDf7qU2e2gu64OnAeQ7835Fe5GLEfDY0jhyo8DEiv5daPq0_qrw_QfG9DKWskiE/360fx360f height=35 width=35></img></a>" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td><a style=color:green>" + myArr.items[g].change_buy + "</a></td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
+    }
+    if (myArr.items[g].change_buy < 1) {
+  	  txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td>" + "<a target=_blank href="+link+">"+"<img src=https://community.cloudflare.steamstatic.com/economy/image/6TMcQ7eX6E0EZl2byXi7vaVKyDk_zQLX05x6eLCFM9neAckxGDf7qU2e2gu64OnAeQ7835Fe5GLEfDY0jhyo8DEiv5daPq0_qrw_QfG9DKWskiE/360fx360f height=35 width=35></img></a>" + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>"+ "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>"+ "<td><a style=color:red>" + myArr.items[g].change_buy + "</a></td>"+ "<td>" + myArr.items[g].stock + "</td>"+"</tr>"; 
+    }
  }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
