@@ -8,8 +8,8 @@ async function request_1(file,id){
   const myArr = JSON.parse(z);
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "<th>" + "Stock" + "</th>" + "</tr>"; 
-  for (g in myArr) {
-    let name = myArr[g].name;
+  for (g in myArr.items) {
+    let name = myArr.items[g].name;
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
