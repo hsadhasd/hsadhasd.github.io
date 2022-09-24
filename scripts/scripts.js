@@ -13,7 +13,7 @@ async function request_1(file,id){
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
     let link = "https://steamcommunity.com/market/listings/252490/"+nameE;
-    txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>" + "<td><a style=color:#ADD8E6 title="+myArr.items[g].change_buy+">$" + myArr.items[g].buy + "</a></td>"+ "<td><a style=color:#ADD8E6 title="+myArr.items[g].change_sell+">$" + myArr.items[g].sell + "</a></td>" +"</tr>"; 
+    txt = txt + "<tr>" + "<td>" + g + "</td>" + "<td><a target=_blank href="+link+">"+ name + "</a></td>" + "<td>$" + myArr.items[g].buy + "</td>"+ "<td>$" + myArr.items[g].sell + "</td>" +"</tr>"; 
   }
  document.getElementById(id).innerHTML = "<table>" + txt + "</table>";
 }
