@@ -9,6 +9,7 @@ async function request_1(file,id){
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "</tr>"; 
   for (g in myArr.items) {
+    let g = g + 1
     let name = myArr.items[g].name;
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
