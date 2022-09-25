@@ -9,7 +9,6 @@ async function request_1(file,id){
   let txt = ""
   txt = txt + "<tr>" + "<th>" + "Num" + "</th>" + "<th>" + "Name" + "</th>"+ "<th>" + "Buy" + "</th>"  + "<th>" + "Sell" + "</th>" + "</tr>"; 
   for (g in myArr.items) {
-    let g = g + 1
     let name = myArr.items[g].name;
     nameE = name.replace(/ /g,"%20");
     name = name.replace(/%27/g,"\'")
@@ -27,10 +26,10 @@ async function request_2(file,id){
   const myArr = JSON.parse(z);
   txt = ""
   if (myArr.csdeals.status === "True") {
-    txt = txt + "<a title=Online style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>$"+myArr.csdeals.balance+"</a>"+")/"
+    txt = txt + "<a title=Online style=color:green target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>$"+myArr.csdeals.balance+"</a>"+")"
   }
   else {
-    txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>$"+myArr.csdeals.balance+"</a>"+")/"
+    txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>$"+myArr.csdeals.balance+"</a>"+")"
   }
 }
 async function request_refresh(id){
