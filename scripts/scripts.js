@@ -31,6 +31,7 @@ async function request_2(file,id){
   else {
     txt = txt + "<a title=Offline style=color:red target=_blank href=https://cs.deals/market/rust/>cs.deals</a>("+"<a title=Balance on cs.deals>$"+myArr.csdeals.balance+"</a>"+")"
   }
+  document.getElementById(id).innerHTML = txt
 }
 async function request_refresh(id){
   console.log(id)
